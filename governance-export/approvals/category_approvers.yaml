@@ -1,0 +1,10 @@
+version: 1
+count: 1
+category_approvers:
+- approver_id: 23ed406a-f302-468c-af2a-7534e04f8d2a
+  attribute_key: sensitivity
+  category_path: finance
+  principal_name: david.galluzzo@databricks.com
+  principal_type: USER
+  created_by: david.galluzzo@databricks.com
+  created_at: '2026-11-10T03:15:01.721940Z'

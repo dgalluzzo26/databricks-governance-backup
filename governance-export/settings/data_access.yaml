@@ -1,0 +1,15 @@
+version: 1
+data_access:
+  dry_run: true
+  group_prefix: dac_
+  schedule_mode: apply
+  access_tag_key: data_access_control
+  review_tag_key: clr_review_status
+  conflict_policy: hold
+  data_privileges:
+  - SELECT
+  allowed_catalogs: []
+  interval_minutes: 60
+  review_tag_value: reviewed
+  schedule_enabled: true
+  hierarchy_separator: .

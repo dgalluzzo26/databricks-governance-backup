@@ -1,0 +1,58 @@
+version: 1
+count: 6
+mask_rules:
+- rule_key: email
+  description: Keep email domain
+  kind: builtin
+  handler: email
+  expression: null
+  params: {}
+  validated_at: null
+  updated_by: david.galluzzo@databricks.com
+  updated_at: '2026-11-10T11:10:49.126468Z'
+- rule_key: full
+  description: Full redact
+  kind: builtin
+  handler: full
+  expression: null
+  params: {}
+  validated_at: null
+  updated_by: david.galluzzo@databricks.com
+  updated_at: '2026-11-10T11:10:49.095930Z'
+- rule_key: id_hash
+  description: Prefixed joinable hash
+  kind: custom
+  handler: id_hash
+  expression: concat('ID-', sha2(lower(trim(v)), 256))
+  params: {}
+  validated_at: '2026-11-10T11:25:42.905654Z'
+  updated_by: david.galluzzo@databricks.com
+  updated_at: '2026-11-10T11:25:42.905654Z'
+- rule_key: joinable
+  description: Deterministic hash for joins
+  kind: builtin
+  handler: joinable
+  expression: null
+  params: {}
+  validated_at: null
+  updated_by: david.galluzzo@databricks.com
+  updated_at: '2026-11-10T11:10:49.163860Z'
+- rule_key: keep_last_4
+  description: Keep last 4 characters
+  kind: builtin
+  handler: keep_last_n
+  expression: null
+  params:
+    n: 4
+  validated_at: null
+  updated_by: david.galluzzo@databricks.com
+  updated_at: '2026-11-10T11:10:49.181203Z'
+- rule_key: phone
+  description: Keep last 4 phone digits
+  kind: builtin
+  handler: phone
+  expression: null
+  params: {}
+  validated_at: null
+  updated_by: david.galluzzo@databricks.com
+  updated_at: '2026-11-10T11:10:49.144335Z'

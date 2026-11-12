@@ -1,0 +1,19 @@
+version: 1
+generated_at: '2026-11-12T03:43:48.905411+00:00'
+generated_by: david.galluzzo@databricks.com
+storage_backend: lakebase
+app_catalog: data_governance_app
+app_schema: app
+git:
+  repo_url: https://github.com/dgalluzzo26/databricks-governance-backup.git
+  branch: main
+  path_prefix: governance-export
+files:
+- manifest.yaml
+- settings/data_access.yaml
+- identity/attribute_definitions.yaml
+- identity/assignments.yaml
+- approvals/category_approvers.yaml
+- masking/rules.yaml
+- masking/config.yaml
+- exceptions/policy_exceptions.yaml
