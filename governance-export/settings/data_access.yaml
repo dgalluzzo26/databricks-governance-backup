@@ -12,4 +12,11 @@ data_access:
   interval_minutes: 60
   review_tag_value: reviewed
   schedule_enabled: true
+  grant_concurrency: 48
   hierarchy_separator: .
+  warehouse_autoscale: true
+  membership_concurrency: 8
+  warehouse_max_clusters: 8
+  enrollment_catalog_tag_key: data_access_controlled
+  warehouse_baseline_clusters: 4
+  enrollment_catalog_tag_value: 'true'

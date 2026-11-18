@@ -1,5 +1,5 @@
 version: 1
-count: 6
+count: 7
 mask_rules:
 - rule_key: email
   description: Keep email domain
@@ -47,6 +47,15 @@ mask_rules:
   validated_at: null
   updated_by: david.galluzzo@databricks.com
   updated_at: '2026-11-10T11:10:49.181203Z'
+- rule_key: mask
+  description: return mask
+  kind: custom
+  handler: mask
+  expression: concat('***','masked', '***')
+  params: {}
+  validated_at: '2026-11-16T16:56:27.339156Z'
+  updated_by: david.galluzzo@databricks.com
+  updated_at: '2026-11-16T16:56:27.339156Z'
 - rule_key: phone
   description: Keep last 4 phone digits
   kind: builtin
