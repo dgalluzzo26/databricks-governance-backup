@@ -1,6 +1,6 @@
 version: 1
-generated_at: '2026-11-18T20:28:24.119956+00:00'
-generated_by: scheduler
+generated_at: '2026-11-18T20:28:42.803486+00:00'
+generated_by: david.galluzzo@databricks.com
 storage_backend: lakebase
 app_catalog: data_governance_app
 app_schema: app
